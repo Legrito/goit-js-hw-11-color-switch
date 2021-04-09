@@ -1,0 +1,46 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5em;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 200px;
+    height: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 48px;
+    border: none;
+    color: white;
+    transition: all 250ms ease;
+}
+
+button:focus {
+    transform: translateY(-10%);
+}
+
+button[data-action="start"] {
+    margin-right: 10px;
+    background-color: tomato;
+    outline: olivedrab;
+
+}
+
+button[data-action="start"]:disabled {
+    background-color: rgb(248, 161, 145);
+    transform: translateY(-10%);
+}
+
+button[data-action="stop"] {
+    background-color: olivedrab;
+    outline: tomato;
+
+}
